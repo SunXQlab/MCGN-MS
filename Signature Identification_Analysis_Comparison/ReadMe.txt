@@ -1,6 +1,6 @@
-Multicellular gene network analysis identifies a macrophage-related gene signature predictive of therapeutic response and prognosis of gliomas
+--- Multicellular gene network analysis identifies a macrophage-related gene signature predictive of therapeutic response and prognosis of gliomas
 
-The codes were implemented in R (version 3.5.1).  The codes included two sectiins: (1) Multicellular Gene Network; and (2) Signature Identification_Analysis_Comparison.
+The codes were implemented in R (version 3.5.1).  The codes included two sections: (1) Multicellular Gene Network; and (2) Signature Identification_Analysis_Comparison.
 
 (1) Multicellular Gene Network:
 
@@ -8,28 +8,28 @@ This file folder contains R codes of selecting DEGs and constructing PCC-based m
 
 The gene expression data of mouse is saved in 'Gene_expression_DATA.csv' or 'Gene_expression_DATA.RData'. 
 
-(1.1)  selected.R           --------       analyze DEGs and select top 50 DEGs in TCs and TAMs respectively.
+(1.1)  selected.R           --------       Analyze DEGs and select top 50 DEGs in TCs and TAMs respectively.
 
-(1.2) pccEPTC.R           ---------       construct PCC-based correlation network for DEGs in TCs of Ep group.
+(1.2) pccEPTC.R           ---------       Construct PCC-based correlation network for DEGs in TCs of Ep group.
 
-(1.3) pccEPTAM.R        ---------      construct PCC-based correlation network for DEGs in TAMs of Ep group.
+(1.3) pccEPTAM.R        ---------      Construct PCC-based correlation network for DEGs in TAMs of Ep group.
 
-(1.4) pccEP_TAM_TC.R ---------      construct PCC-based correlation network for DEGs between TAMs and TCs of Ep group.
+(1.4) pccEP_TAM_TC.R ---------      Construct PCC-based correlation network for DEGs between TAMs and TCs of Ep group.
 
-(1.5) pccREBTC.R          ---------     construct PCC-based correlation network for DEGs in TCs of Reb group.
+(1.5) pccREBTC.R          ---------     Construct PCC-based correlation network for DEGs in TCs of Reb group.
 
-(1.6) pccREBTAM.R       ---------     construct PCC-based correlation network for DEGs in TAMs of Reb group.
+(1.6) pccREBTAM.R       ---------     Construct PCC-based correlation network for DEGs in TAMs of Reb group.
 
-(1.7) pccREB_TAM_TC.R ---------    construct PCC-based correlation network for DEGs between TAMs and TCs of Reb group.
+(1.7) pccREB_TAM_TC.R ---------    Construct PCC-based correlation network for DEGs between TAMs and TCs of Reb group.
 
-(1.8) compccdifPCC0.05.R --------   construct differential network using network perturbation method.
+(1.8) compccdifPCC0.05.R --------   Construct differential network using network perturbation method.
 
-(1.9) updown.R                ---------    analysis of correlation-gain or -loss of the edges in the networks. 
+(1.9) updown.R                ---------    Analysis of correlation-gain or -loss of the edges in the networks. 
 
 
 (2) Signature Identification_Analysis_Comparison:
 
-The clinical information and gene expression data of patient from TCGA and CGGA are saved in .csv files in this folder. 
+The clinical information of patient from TCGA and CGGA are saved in .csv files in this folder. The RNA-seq gene expression data of patients are in too large size (>25M) to be uploaded here, which are needed to be downloaded from TCGA (GBM and LGG) and CGGA and saved under the working path.
 
 (2.1) Macrophage_Signature.R     ---------  Train a macrophage-related gene signature from CGGA set and validate on TCGA set; K-M analysis; plot ROC and compute AUC.  (for Figures 3-4)
  
