@@ -1,5 +1,5 @@
 # MCGN-MS
----- Multicellular gene network analysis identifies a macrophage-related gene signature predictive of therapeutic response and prognosis of gliomas
+--- Multicellular gene network analysis identifies a macrophage-related gene signature predictive of therapeutic response and prognosis of gliomas
 
 The codes were implemented in R (version 3.5.1).  The codes included two sections: (1) Multicellular Gene Network; and (2) Signature Identification_Analysis_Comparison.
 
@@ -30,7 +30,7 @@ The gene expression data of mouse is saved in 'Gene_expression_DATA.csv' or 'Gen
 
 (2) Signature Identification_Analysis_Comparison:
 
-The clinical information and gene expression data of patient from TCGA and CGGA are saved in .csv files in this folder. 
+The clinical information of patient from TCGA and CGGA are saved in .csv files in this folder. The RNA-seq gene expression data of patients are in too large size (>25M) to be uploaded here, which are needed to be downloaded from TCGA (GBM and LGG) and CGGA and saved under the working path.
 
 (2.1) Macrophage_Signature.R     ---------  Train a macrophage-related gene signature from CGGA set and validate on TCGA set; K-M analysis; plot ROC and compute AUC.  (for Figures 3-4)
  
