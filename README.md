@@ -1,4 +1,5 @@
-# MCGN-MS ---- Multicellular gene network analysis identifies a macrophage-related gene signature predictive of therapeutic response and prognosis of gliomas
+# MCGN-MS
+---- Multicellular gene network analysis identifies a macrophage-related gene signature predictive of therapeutic response and prognosis of gliomas
 
 The codes were implemented in R (version 3.5.1).  The codes included two sections: (1) Multicellular Gene Network; and (2) Signature Identification_Analysis_Comparison.
 
