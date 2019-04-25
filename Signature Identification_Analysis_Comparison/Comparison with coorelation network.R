@@ -544,11 +544,11 @@ for (i in 1:100)
 # hist(AUC_3Y)
 # hist(AUC_5Y)
 
-#### KS Test computing p value
+#### WilcoxonTest computing p value
 
-ks.test(AUC_OS, AUC_OS_PCCNet, alternative = "less", exact = T)   # not less than
-ks.test(AUC_3Y, AUC_3Y_PCCNet, alternative = "less", exact = T) 
-ks.test(AUC_5Y, AUC_5Y_PCCNet, alternative = "less", exact = T) 
+wilcox.test(AUC_OS, AUC_OS_PCCNet, alternative = "greater") 
+wilcox.test(AUC_3Y, AUC_3Y_PCCNet, alternative = "greater") 
+wilcox.test(AUC_5Y, AUC_5Y_PCCNet, alternative = "greater") 
 
 
 # overall survival ROC AUC
