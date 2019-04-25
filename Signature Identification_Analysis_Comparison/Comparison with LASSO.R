@@ -540,9 +540,9 @@ for (i in 1:100)
 
 #### Wilcoxon Test computing p value
 
-wilcox.test(AUC_OS, AUC_OS_LASSO, alternative = "greater", paired=T) 
-wilcox.test(AUC_3Y, AUC_3Y_LASSO, alternative = "greater", paired=T) 
-wilcox.test(AUC_5Y, AUC_5Y_LASSO, alternative = "greater", paired=T) 
+wilcox.test(AUC_OS, AUC_OS_LASSO, alternative = "greater") 
+wilcox.test(AUC_3Y, AUC_3Y_LASSO, alternative = "greater") 
+wilcox.test(AUC_5Y, AUC_5Y_LASSO, alternative = "greater") 
 
 
 # overall survival ROC AUC
